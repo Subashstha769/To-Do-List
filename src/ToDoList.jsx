@@ -1,16 +1,27 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 
 function ToDoList() {
 
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(() => {
+    
+    const storedTasks = localStorage.getItem("todo-tasks");
+    return storedTasks ? JSON.parse(storedTasks) : [];
+  });
+
+
   const [search, setSearch] = useState("");
 
-  
+  // let's save to localStorage whenever task changes
+  useEffect(() => {
+    localStorage.setItem("todo-tasks", JSON.stringify(task));
+  }, [task]);
+
+
 
   // Let's Filter the tasks based on search input
- let filteredTasks = task.filter(task => task.toLowerCase().includes(search.toLowerCase()));
+  let filteredTasks = task.filter(task => task.toLowerCase().includes(search.toLowerCase()));
 
-  
+
   function handleSearch(e) {
     setSearch(e.target.value);
   }
