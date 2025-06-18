@@ -62,7 +62,7 @@ function ToDoList() {
 
             {
               task.length ?
-                filteredTasks.map((filteredTasks, index) => <li key={index} className="bg-[rgba(255,255,255,0.2)] w-full h-[40px] flex items-center justify-between px-1 my-[2px] rounded-[4px] text-[18px] hover:cursor-pointer hover:bg-[rgba(0,0,0,0.2)] hover:text-white "> <span>{filteredTasks}</span> <span> <i class="fa-solid fa-pen-nib text-[20px] hover:underline hover:text-blue-600 " title="Edit"></i> | <i class="fa-solid fa-trash text-[20px] hover:text-red-600 " title="Delete" onClick={() => handleDelete(index)}></i></span></li>) :
+                filteredTasks.map((filteredTasks, index) => <li key={index} className={`bg-[rgba(255,255,255,0.2)] w-full h-[40px] flex items-center justify-between px-1 my-[2px] rounded-[4px] text-[18px] hover:cursor-pointer hover:bg-[rgba(0,0,0,0.2)] hover:text-white  `}> <span>{filteredTasks}</span> <span> <i class="fa-solid fa-pen-nib text-[20px] hover:underline hover:text-blue-600 " title="Edit"></i> | <i class="fa-solid fa-trash text-[20px] hover:text-red-600 " title="Delete" onClick={() => handleDelete(index)}></i></span></li>) :
                 <li className="w-full h-[40px] text-3xl text-[rgba(255,255,255,0.4)] font-normal flex items-center justify-center gap-2 ">No task available <i class="fa-solid fa-box-open text-4xl"></i></li>
             }
 
