@@ -1,12 +1,26 @@
-# React + Vite
+🗒️ To-Do List App - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The main goal behind this project was to practice React hooks like `useState` and `useEffect`, and to understand how to manage and persist state effectively using `localStorage`.
 
-Currently, two official plugins are available:
+# Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add and delete tasks
+- Real-time search functionality
+- Persistent data storage using `localStorage`
+- Lazy state initialization for better performance
+- Clean and responsive UI using Tailwind CSS
 
-## Expanding the ESLint configuration
+# Build with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS
+- Tailwind CSS
+- JavaScript (ES6+)
+- Browser `localStorage`
+
+# Preview
+![image](https://github.com/user-attachments/assets/faf68b0f-23a7-4444-9eab-0e5caaa70571)
+![image](https://github.com/user-attachments/assets/35bdc45f-7643-459f-aa4d-b23ca2e58121)
+![image](https://github.com/user-attachments/assets/be5ae773-3254-4f81-bc6a-41fd38670ff9)
+
+
+
